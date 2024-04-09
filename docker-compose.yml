@@ -1,0 +1,33 @@
+version: "2"
+services:
+  webserver:
+    image: mydemophpimage
+    ports:
+      - "9001:80"
+      # - "543:443"
+    volumes:
+      - ./app:/var/www/html
+    networks:
+      - test
+
+  db:
+    image: mariadb:10.11
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: F00tb@ll1120
+    networks:
+      - test
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8083:80
+    environment:
+      - PMA_HOST=db
+    networks:
+      - test
+
+networks:
+  test:
+    # external: true
