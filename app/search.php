@@ -15,7 +15,7 @@
     <?php if ( count( $search_field ) > 0 ) : ?>
 
         <table class="table table-striped">
-            <thead>
+            <thead class="fixed">
                 <tr>
                 <th scope="col">ID</th>
                 <th scope="col">First Name</th>
