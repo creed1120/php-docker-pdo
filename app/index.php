@@ -20,10 +20,9 @@
 <?php require_once "./header.php"; ?>
 
     <div class="container">
-
+        <h1 class="text-primary mb-5">Search function with PDO</h1>
         <div class="row">
             <div class="col-md-4">
-                <h1 class="text-primary">Filter with PDO</h1>
                 <div class="form-wrapper m-0 p-4 bg-primary-subtle">
 
                     <form class="row g-3 needs-validation mt-2" action="insert.php" method="POST">
@@ -48,7 +47,7 @@
 
             </div>
             <div class="col-md-8">
-                <h1 class="text-primary">Search</h1>
+                <!-- <h1 class="text-primary">Search</h1>
 
                 <form class="row g-3 needs-validation" action="" method="POST">
                     <div class="col-md-4">
@@ -59,7 +58,7 @@
                     <div class="col-12">
                         <button class="btn btn-primary" type="submit" name="search">Search</button>
                     </div>
-                </form>
+                </form> -->
 
                     <?php include './search.php'; ?>
                 

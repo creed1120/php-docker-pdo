@@ -9,12 +9,10 @@
 
 ?>
 
-<section style="height: 400px;" class="mt-5 mh-100 overflow-scroll">
+<section style="height: 400px;" class="mh-100 overflow-scroll">
 
     <!-- Get the number of rows from the Search -->
     <?php if ( count( $search_field ) > 0 ) : ?>
-
-        <?php echo count($search_field); ?>
 
         <table class="table table-striped">
             <thead>
